@@ -1219,6 +1219,58 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="DGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="VCC" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1238,22 +1290,43 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="ATTINY85SLAVE" library="SparkFun-DigitalIC" deviceset="ATTINY45" device="TINY85-20-DIP" value="TINY85-20-DIP"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/4W" value="4.7K"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="PTH-1/4W" value="4.7K"/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND" library="SparkFun-Connectors" deviceset="BANANA_CONN" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="0" y="55.88" size="1.778" layer="91">OE</text>
 </plain>
 <instances>
 <instance part="IC1" gate="A" x="58.42" y="86.36"/>
 <instance part="IC2" gate="A" x="58.42" y="48.26"/>
 <instance part="IC3" gate="A" x="58.42" y="-5.08"/>
 <instance part="ATTINY85MASTER" gate="G$1" x="-40.64" y="73.66"/>
-<instance part="VCC" gate="G$1" x="-96.52" y="104.14"/>
+<instance part="VCC" gate="G$1" x="-83.82" y="104.14"/>
 <instance part="JP2" gate="G$1" x="12.7" y="96.52" rot="R180"/>
 <instance part="ATTINY85SLAVE" gate="G$1" x="-40.64" y="27.94"/>
 <instance part="R1" gate="G$1" x="-20.32" y="96.52" rot="R90"/>
 <instance part="R2" gate="G$1" x="-12.7" y="96.52" rot="R90"/>
+<instance part="SUPPLY1" gate="G$1" x="-63.5" y="35.56"/>
+<instance part="SUPPLY2" gate="G$1" x="-17.78" y="106.68"/>
+<instance part="SUPPLY3" gate="G$1" x="81.28" y="101.6"/>
+<instance part="SUPPLY4" gate="G$1" x="-88.9" y="106.68"/>
+<instance part="SUPPLY5" gate="G$1" x="-63.5" y="83.82"/>
+<instance part="GND1" gate="1" x="-60.96" y="20.32"/>
+<instance part="GND2" gate="1" x="-60.96" y="63.5"/>
+<instance part="GND3" gate="1" x="-5.08" y="91.44"/>
+<instance part="GND4" gate="1" x="-88.9" y="91.44"/>
+<instance part="GND5" gate="1" x="27.94" y="-27.94"/>
+<instance part="GND" gate="G$1" x="-83.82" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -1267,61 +1340,82 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="81.28" y1="5.08" x2="73.66" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="VCC"/>
 <wire x1="73.66" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="96.52" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="96.52" x2="81.28" y2="93.98" width="0.1524" layer="91"/>
 <junction x="81.28" y="58.42"/>
-<wire x1="81.28" y1="96.52" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
-<junction x="81.28" y="96.52"/>
-<wire x1="81.28" y1="104.14" x2="-7.62" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="ATTINY85MASTER" gate="G$1" pin="VCC"/>
-<wire x1="-7.62" y1="104.14" x2="-12.7" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="104.14" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="104.14" x2="-63.5" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="104.14" x2="-99.06" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="81.28" x2="-63.5" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="81.28" x2="-63.5" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="SUPPLY3" gate="G$1" pin="VCC"/>
+<wire x1="81.28" y1="93.98" x2="81.28" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="101.6" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="VCC" gate="G$1" pin="1"/>
-<label x="-83.82" y="106.68" size="1.778" layer="95"/>
+<pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
+<wire x1="-86.36" y1="104.14" x2="-88.9" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="104.14" x2="-88.9" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="JP2" gate="G$1" pin="2"/>
-<wire x1="-7.62" y1="104.14" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="96.52" x2="2.54" y2="91.44" width="0.1524" layer="91"/>
-<junction x="-7.62" y="104.14"/>
-<pinref part="ATTINY85SLAVE" gate="G$1" pin="VCC"/>
-<wire x1="-63.5" y1="81.28" x2="-63.5" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-63.5" y1="43.18" x2="-55.88" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-63.5" y="81.28"/>
+<wire x1="-7.62" y1="104.14" x2="-7.62" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-7.62" y1="104.14" x2="-12.7" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="101.6" x2="-12.7" y2="104.14" width="0.1524" layer="91"/>
 <junction x="-12.7" y="104.14"/>
+<wire x1="-12.7" y1="104.14" x2="-17.78" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="-17.78" y1="104.14" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="-20.32" y1="101.6" x2="-20.32" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-20.32" y="104.14"/>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="-17.78" y1="106.68" x2="-17.78" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-17.78" y="104.14"/>
+</segment>
+<segment>
+<pinref part="ATTINY85MASTER" gate="G$1" pin="VCC"/>
+<wire x1="-55.88" y1="81.28" x2="-63.5" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="G$1" pin="VCC"/>
+<wire x1="-63.5" y1="83.82" x2="-63.5" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+<pinref part="ATTINY85SLAVE" gate="G$1" pin="VCC"/>
+<wire x1="-63.5" y1="35.56" x2="-55.88" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="IC3" gate="A" pin="GND"/>
 <wire x1="48.26" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-76.2" y1="-17.78" x2="-68.58" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="-17.78" x2="-7.62" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="-17.78" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="-17.78" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="A" pin="GND"/>
+<wire x1="27.94" y1="-17.78" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="35.56" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A" pin="GND"/>
 <wire x1="48.26" y1="73.66" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="73.66" x2="27.94" y2="35.56" width="0.1524" layer="91"/>
 <junction x="27.94" y="35.56"/>
-<pinref part="ATTINY85MASTER" gate="G$1" pin="GND"/>
-<wire x1="-55.88" y1="68.58" x2="-68.58" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-68.58" y1="68.58" x2="-68.58" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="27.94" y1="-25.4" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="27.94" y="-17.78"/>
+</segment>
+<segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="-68.58" y1="22.86" x2="-68.58" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="2.54" y1="93.98" x2="-7.62" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-7.62" y1="93.98" x2="-7.62" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="-7.62" y="-17.78"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="2.54" y1="93.98" x2="-5.08" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="ATTINY85SLAVE" gate="G$1" pin="GND"/>
-<wire x1="-55.88" y1="22.86" x2="-68.58" y2="22.86" width="0.1524" layer="91"/>
-<junction x="-68.58" y="22.86"/>
+<wire x1="-55.88" y1="22.86" x2="-60.96" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="ATTINY85MASTER" gate="G$1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="-55.88" y1="68.58" x2="-60.96" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="68.58" x2="-60.96" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND" gate="G$1" pin="1"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="-86.36" y1="96.52" x2="-88.9" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="96.52" x2="-88.9" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -1345,8 +1439,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="-15.24" y1="88.9" x2="2.54" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="JP2" gate="G$1" pin="3"/>
 <pinref part="ATTINY85SLAVE" gate="G$1" pin="PB0(MOSI)"/>
-<wire x1="-15.24" y1="81.28" x2="-15.24" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="-15.24" y1="48.26" x2="-27.94" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="81.28" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="35.56" x2="-27.94" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-15.24" y="81.28"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="-20.32" y1="91.44" x2="-17.78" y2="91.44" width="0.1524" layer="91"/>
@@ -1362,8 +1456,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="JP2" gate="G$1" pin="4"/>
 <pinref part="ATTINY85MASTER" gate="G$1" pin="PB2(SCK/ADC1)"/>
 <pinref part="ATTINY85SLAVE" gate="G$1" pin="PB2(SCK/ADC1)"/>
-<wire x1="-12.7" y1="76.2" x2="-12.7" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="45.72" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="76.2" x2="-12.7" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="30.48" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-12.7" y="76.2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-12.7" y1="86.36" x2="-12.7" y2="91.44" width="0.1524" layer="91"/>
