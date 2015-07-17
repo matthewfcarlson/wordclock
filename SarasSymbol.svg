@@ -15,7 +15,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="SarasSymbol.svg">
+   sodipodi:docname="SarasSymbol.svg"
+   inkscape:export-filename="C:\Users\t-macarl\Documents\GitHub\wordclock\SarasSymbol.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -227,12 +230,12 @@
        id="path4522"
        sodipodi:cx="85"
        sodipodi:cy="83.362206"
-       sodipodi:expansion="1.5"
-       sodipodi:revolution="2.0173969"
+       sodipodi:expansion="1.73"
+       sodipodi:revolution="2.02"
        sodipodi:radius="43.562275"
        sodipodi:argument="-13.288497"
        sodipodi:t0="0.05315889"
-       d="m 85.533295,83.336427 c 1.472955,0.577925 0.456366,2.651336 -0.376563,3.268141 -2.674201,1.980311 -6.178888,-0.309891 -7.342282,-2.895021 -2.33795,-5.195061 1.666079,-10.764184 6.602951,-12.399708 8.11885,-2.689672 16.206119,3.441553 18.274759,11.197146 3.0449,11.415704 -5.557369,22.383935 -16.531513,24.865815 C 71.106994,110.77729 56.9435,99.405778 54.058678,84.857876 50.289888,65.852197 64.697702,48.210697 83.142124,44.927845 97.00201,42.460977 111.30841,47.896975 120.63526,58.306268" />
+       d="m 85.271561,83.349315 c 0.988173,0.332326 0.332958,1.761406 -0.168361,2.186999 -1.898994,1.612145 -4.600691,-0.0705 -5.545115,-1.915794 -2.098179,-4.099602 1.091969,-8.68557 4.972938,-10.138263 6.869654,-2.571394 13.89433,2.621667 15.850447,9.149828 C 103.43244,92.814104 95.776695,102.77536 86.038328,105.2367 72.027261,108.77794 58.666925,98.230291 55.694474,84.753266 51.650679,66.418793 65.496062,49.221781 83.213681,45.729739 97.146943,42.983572 111.63193,48.420156 121.04028,58.892424" />
     <path
        sodipodi:type="spiral"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.0625;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
